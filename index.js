@@ -1,12 +1,12 @@
-const imgSrc = require('./dual_monitors.jpg');
-
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './style.css';
-
+const imgSrc = require("./dual_monitors.jpg");
+import { BrowserRouter as Router } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom";
+import "./style.css";
+import App from "./components/App";
 const Greeting = ({ name }) => <p className="greet">Hello, {name}!</p>;
 
-ReactDOM.render(<Greeting name="Reign" />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // const greeting = 'Hello, Webpack!';
 // (() => {
